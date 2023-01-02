@@ -44,7 +44,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 26px;
+    padding: 26px 0;
     max-width: 1260px;
     margin: auto;
 }
@@ -96,6 +96,7 @@ header.scrolled {
 }
 #burger-menu {
     display: none;
+    cursor: pointer;
 }
 @media (max-width: 998px) {
     #burger-menu {
@@ -107,6 +108,7 @@ header.scrolled {
     .header-container {
         background-color: #ffff;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+        padding: 26px;
     }
 }
 .page-index {
@@ -210,18 +212,21 @@ header.scrolled {
     max-width: 425px;
 }
 .services .box-container {
+    height: 380px;
     margin-top: 56px;
-    display: flex;
-    gap: 56px;
+    display: flex ;
+    gap: 48px;
 }
 .services .box {
-    padding: 48px 24px;
-    box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.15);
+    padding: 48px 24px 16px 24px;
+    box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.15) ;
     border-radius: 16px;
     background-color: #ffff;
+    width: calc((100% / 3) - 48px) ;
+    max-height: 326px;
 }
 .services .box h2{
-    font-size: 1.5rem;
+    font-size: 1.5rem ;
     color: var(--Neutral-900);
     font-weight: 700;
     margin-top: 12px;
@@ -238,4 +243,36 @@ header.scrolled {
 }
 .services .box.active p {
     color: var(--Neutral-300);
+}
+@media (max-width: 910px) {
+    .services .box-container {
+        gap: 0;
+    }
+    .services .box {
+        width: 70%;
+        height: 80%;
+    }
+    .services h1 {
+        text-align: center;
+    }
+    .services > p {
+        text-align: center;
+        margin: auto;
+        max-width: max-content;
+    }
+}
+@media (max-width: 768px) {
+    .services .box {
+        width: 90%;
+        text-align: center;
+    }
+    .services h1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .services p {
+        text-align: center;
+        margin: auto;
+        max-width: max-content;
+    }
 }

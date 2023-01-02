@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <title>Litedia</title>
 </head>
@@ -47,21 +49,21 @@
                 <img src="images/companies/lina-sales-sucres.svg" alt="lina-sales-sucres">
             </div>
         </div>
-        <div class="services" id="services">
+        <div class="services swiper mySwiper" id="services">
             <h1>What makes our services unique</h1>
             <p>we want you idea, project, business to grow and help our community  experience a better life</p>
-            <div class="box-container">
-                <div class="box active">
+            <div class="box-container swiper-wrapper">
+                <div class="box swiper-slide active">
                     <img src="images/cup.svg" alt="litedia-cup">
                     <h2>High Quality & Reliable</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices ultrices ipsum, vel pellentesque leo pulvinar sit amet. Ut ac augue eget enim feugiat semper vel eu purus. risus blandit.</p>
+                    <p>Lorem ipsum dolor sit amet, Pellentesque ultrices ultrices ipsum, vel pellentesque leo pulvinar sit amet. Ut ac augue eget enim feugiat semper vel eu purus. risus blandit.</p>
                 </div>
-                <div class="box">
+                <div class="box swiper-slide">
                     <img src="images/clock.svg" alt="litedia-clock">
                     <h2>24/7 Support</h2>
                     <p>Lorem ipsum dFamiliarize yourself with the payment plans below, see for yourseld that the basic service for your business is not as expensive as it might.</p>
                 </div>
-                <div class="box">
+                <div class="box swiper-slide">
                     <img src="images/dollar.svg" alt="litedia-currency">
                     <h2>Realistic & studied price</h2>
                     <p>Pellentesque ultrices ultrices ipsum, vel pellentesque leo pulvinar sit amet. Ut ac augue eget enim feugiat semper vel eu purus. risus blandit.</p>
@@ -69,6 +71,8 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+
 </body>
 </html>

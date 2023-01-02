@@ -6,3 +6,24 @@ window.addEventListener("scroll",() => {
         header.classList.remove('scrolled');
     }
 });
+
+let init = false;
+
+function swiperCard() {
+    if (window.innerWidth <= 910) {
+        if (!init) {
+            init = true;
+            swiper = new Swiper(".mySwiper", {
+                direction: "horizontal",
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 56,
+        });
+        }
+    } else if (init) {
+        swiper.destroy();
+        init = false;
+    }
+}
+swiperCard();
+window.addEventListener("resize", swiperCard);
