@@ -53,7 +53,7 @@
             <h1>What makes our services unique</h1>
             <p>we want you idea, project, business to grow and help our community  experience a better life</p>
             <div class="box-container swiper-wrapper">
-                <div class="box swiper-slide active">
+                <div class="box swiper-slide-active swiper-slide">
                     <img src="images/cup.svg" alt="litedia-cup">
                     <h2>High Quality & Reliable</h2>
                     <p>Lorem ipsum dolor sit amet, Pellentesque ultrices ultrices ipsum, vel pellentesque leo pulvinar sit amet. Ut ac augue eget enim feugiat semper vel eu purus. risus blandit.</p>
@@ -70,9 +70,98 @@
                 </div>
             </div>
         </div>
+        <div class="offers " id="offers">
+            <div class="text-content swiper mySecSwiper">
+                <h1>What can we do for you</h1>
+                <p id="text">Familiarize yourself with the payment plans below, see for yourself that the basic service for your business is not as expensive as it might seem</p>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide-active swiper-slide" data-content="Web Developement">
+                        Web Developement
+                    </div>
+                    <div class="swiper-slide" data-content="Graphic Design">
+                        Graphic Design
+                    </div>
+                    <div class="swiper-slide" data-content="App Development">
+                        App Development
+                    </div>
+                </div>
+            </div>
+            <div class="content web active" data-content="Web Developement">
+                <div>
+                    <h2>Web Developement</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices ultrices ipsum, vel pellentesque leo pulvinar sit amet. Ut ac augue eget enim feugiat semper vel eu purus. risus blandit.
+                    </p>
+                    <ul>
+                        <li><img src="images/trueIcon.svg" alt="icon"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li><img src="images/trueIcon.svg" alt="icon"> Ut ac augue eget enim feugiat semper vel eu purus.</li>
+                        <li><img src="images/trueIcon.svg" alt="icon"> Pellentesque ultrices ultrices ipsum</li>
+                    </ul>
+                </div>
+                <img src="images/Frame.svg" alt="web developmenet">
+            </div>
+            <div class="content design" data-content="Graphic Design" >
+                <div>
+                    <h2>Graphic Design</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices ultrices ipsum, vel pellentesque leo pulvinar sit amet. Ut ac augue eget enim feugiat semper vel eu purus. risus blandit.
+                    </p>
+                    <ul>
+                        <li><img src="images/trueIcon.svg" alt="icon"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li><img src="images/trueIcon.svg" alt="icon"> Ut ac augue eget enim feugiat semper vel eu purus.</li>
+                        <li><img src="images/trueIcon.svg" alt="icon"> Pellentesque ultrices ultrices ipsum</li>
+                    </ul>
+                </div>
+                <img src="images/Frame.svg" alt="web developmenet">
+            </div>
+            <div class="content app" data-content="App Development">
+                <div>
+                    <h2>App Developement</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices ultrices ipsum, vel pellentesque leo pulvinar sit amet. Ut ac augue eget enim feugiat semper vel eu purus. risus blandit.
+                    </p>
+                    <ul>
+                        <li><img src="images/trueIcon.svg" alt="icon"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li><img src="images/trueIcon.svg" alt="icon"> Ut ac augue eget enim feugiat semper vel eu purus.</li>
+                        <li><img src="images/trueIcon.svg" alt="icon"> Pellentesque ultrices ultrices ipsum</li>
+                    </ul>
+                </div>
+                <img src="images/Frame.svg" alt="web developmenet">
+            </div>
+        </div>
+        <div class="contact">
+            <h1><img src="images/shat.svg" alt="shat-icon"> Get in touch with us</h1>
+            <div class="flex-container">
+                <form action="#">
+                    <div class="name">
+                        <div>
+                            <label for="fname">First Name</label>
+                            <input type="text" placeholder="Your First Name" id="fname" name="fname">
+                        </div>
+                        <div>
+                            <label for="lname">Last Name</label>
+                            <input type="text" placeholder="Your Last Name" id="lname" name="lname">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="name@example.com" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="pnumber">Phone Number</label>
+                        <input type="text" placeholder="(+213) 792 142 533" id="pnumber" name="pnumber">
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Write Your Message"></textarea>
+                    </div>
+                    <button type="submit">submit</button>
+                </form>
+                <img src="images/shatImg.png" alt="image-people-shatting">
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
-
 </body>
 </html>
