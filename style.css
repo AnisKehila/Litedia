@@ -546,7 +546,7 @@ footer .container {
 footer {
     background-color: #FFFFFF;
     padding-top: var(--main-section-padding);
-    padding-top: 149px;
+    margin-top: var(--main-section-padding);
 }
 footer .logo-container {
     display: flex;
