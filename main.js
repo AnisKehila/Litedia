@@ -130,5 +130,3 @@ document.onclick = function(e) {
         }
     }
 }
-
-
