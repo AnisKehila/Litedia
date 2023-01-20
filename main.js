@@ -95,6 +95,20 @@ function swiperOffers() {
 }
 swiperOffers();
 window.addEventListener("resize", swiperOffers);
+
+function swiperVertical() {
+    swiper = new Swiper(".myVerSwiper", {
+        direction: "vertical",
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 32,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+    });
+}
+swiperVertical();
 // Click for change content in offers
 let offerBtns = document.querySelectorAll('.offers .swiper-slide');
 let content = document.querySelectorAll('.content');
