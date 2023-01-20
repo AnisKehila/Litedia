@@ -634,3 +634,8 @@ footer .terms a {
         margin-bottom: 24px;
     }
 }
+
+.testi {
+    padding-top: var(--main-section-padding);
+    display: flex;
+}

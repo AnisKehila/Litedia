@@ -4,9 +4,11 @@ const LINKS = document.querySelectorAll('menu a');
 const HOME = document.querySelector('#Home');
 const SERVICES = document.querySelector('#Services');
 const CONTACT = document.querySelector('#Contact');
+const TESTI = document.querySelector('#Testimonials')
 const homeLink = document.querySelector('#nav-home');
 const servicesLink = document.querySelector('#nav-services');
 const contactLink = document.querySelector('#nav-contact');
+const testiLink = document.querySelector('#nav-testi');
 let menu = document.querySelector('menu');
 let header = document.querySelector('header');
 
@@ -20,17 +22,22 @@ window.addEventListener("scroll",() => {
 
 window.addEventListener('scroll' , () => {
     const p = window.pageYOffset;
-    if(p >= HOME.offsetTop && p < SERVICES.offsetTop) {
+    if(p >= HOME.offsetTop-112 && p < SERVICES.offsetTop-112) {
         LINKS.forEach(link => {
             link.classList.remove('active');
         });
         homeLink.classList.add('active');
-    } else if(p >= SERVICES.offsetTop && p < CONTACT.offsetTop) {
+    } else if(p >= SERVICES.offsetTop-112 && p < TESTI.offsetTop-112) {
         LINKS.forEach(link => {
             link.classList.remove('active');
         });
         servicesLink.classList.add('active');
-    }  else if(p >= CONTACT.offsetTop) {
+    } else if(p >= TESTI.offsetTop-112 && p < CONTACT.offsetTop-112) {
+        LINKS.forEach(link => {
+            link.classList.remove('active');
+        });
+        testiLink.classList.add('active');
+    } else if(p >= CONTACT.offsetTop-112) {
         LINKS.forEach(link => {
             link.classList.remove('active');
         });
