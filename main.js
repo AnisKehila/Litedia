@@ -54,12 +54,12 @@ function swiperCard() {
                 direction: "horizontal",
                 slidesPerView: "auto",
                 centeredSlides: true,
-                spaceBetween: 56,
+                spaceBetween: 0,
                 loop: true,
-                autoplay: {
-                    delay: 2000,
-                    disableOnInteraction: false,
-                }
+                // autoplay: {
+                //     delay: 2000,
+                //     disableOnInteraction: false,
+                // }
             });
         }
     } else if (init) {
@@ -101,10 +101,15 @@ function swiperVertical() {
         direction: "vertical",
         slidesPerView: "auto",
         centeredSlides: true,
-        spaceBetween: 32,
+        loop: true,
+        spaceBetween: 0,
         autoplay: {
-            delay: 2000,
+            delay: 6000,
             disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: "#btn-down",
+            prevEl: "#btn-up",
         },
     });
 }
