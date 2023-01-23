@@ -60,6 +60,14 @@ header {
     max-width: 1260px;
     margin: auto;
 }
+@media (max-width: 768px) {
+    header img {
+        max-width: 92px;
+    }
+    .header-container {
+        padding: 12px 26px !important;
+    }
+}
 .header-container menu a {
     color: var(--secondary-color);
     position: relative;
