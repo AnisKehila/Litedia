@@ -106,7 +106,7 @@ function swiperVertical() {
         loop: true,
         spaceBetween: 0,
         autoplay: {
-            delay: 6000,
+            delay: 3500,
             disableOnInteraction: false,
         },
         navigation: {
