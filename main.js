@@ -47,7 +47,7 @@ window.addEventListener('scroll' , () => {
 // boxe swiper in phone && Tablets 
 let init = false;
 function swiperCard() {
-    if (window.innerWidth <= 910) {
+    if (window.innerWidth <= 998) {
         if (!init) {
             init = true;
             swiper = new Swiper(".mySwiper", {
@@ -56,19 +56,21 @@ function swiperCard() {
                 centeredSlides: true,
                 spaceBetween: 0,
                 loop: true,
-                // autoplay: {
-                //     delay: 2000,
-                //     disableOnInteraction: false,
-                // }
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                }
             });
-        }
+        } 
     } else if (init) {
         swiper.destroy();
         init = false;
+        const activeBox = document.querySelectorAll('.box-container .box');
+        activeBox[0].classList.add('swiper-slide-active'); 
     }
 }
-swiperCard();   
 window.addEventListener("resize", swiperCard);
+swiperCard();   
 
 // offers swiper in phone 
 let isInit = false;
@@ -80,12 +82,12 @@ function swiperOffers() {
                 direction: "horizontal",
                 slidesPerView: "auto",
                 centeredSlides: true,
-                spaceBetween: 32,
+                spaceBetween: 0,
                 loop: true,
-                autoplay: {
-                    delay: 2000,
-                    disableOnInteraction: false,
-                }
+                // autoplay: {
+                //     delay: 3000,
+                //     disableOnInteraction: false,
+                // }
             });
         }
     } else if (isInit) {
