@@ -29,9 +29,7 @@ body {
     h1 {
         font-size: 1.5rem !important;
     }
-    a {
-        font-size: 0.92rem !important;
-    }
+
 }
 input,
 textarea {
@@ -224,6 +222,9 @@ header.scrolled {
     }
     .page-index img {
         max-width: 315px;
+    }
+    .page-index a {
+        font-size: 0.92rem;
     }
 }
 .parteners {
@@ -773,7 +774,7 @@ footer .copyright-terms {
     -ms-flex-pack: justify;
     justify-content: space-between;
     color: var(--Neutral-900);
-    font-size: 0.625rem;
+    font-size: 0.625rem !important;
     font-weight: 500;
     margin-top: 16px;
 }

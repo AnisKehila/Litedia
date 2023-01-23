@@ -84,10 +84,10 @@ function swiperOffers() {
                 centeredSlides: true,
                 spaceBetween: 0,
                 loop: true,
-                // autoplay: {
-                //     delay: 3000,
-                //     disableOnInteraction: false,
-                // }
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                }
             });
         }
     } else if (isInit) {
