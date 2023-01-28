@@ -29,6 +29,9 @@ body {
     h1 {
         font-size: 1.5rem !important;
     }
+    h2 {
+        font-size: 1.3rem !important;
+    }
 
 }
 input,
@@ -478,10 +481,9 @@ header.scrolled {
 #plan .container {
     text-align: center;
 }
-#plan h2 {
+#plan h1 {
     font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 2.125rem;
     color: var(--Neutral-700);
     text-align: left;
 }
@@ -492,7 +494,7 @@ header.scrolled {
     margin-top: 30px;
 }
 #plan .plan {
-    min-height: 416px;
+    min-height: 482px;
     background: white;
     padding: 30px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
@@ -540,6 +542,9 @@ header.scrolled {
     font-size: 16px;
     color: #777;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 #plan .plan button:active {
     transform: scale(0.95);

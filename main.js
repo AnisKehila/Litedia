@@ -1,14 +1,16 @@
 // header handler
-const BURGER = document.querySelector('#burger-menu');
-const LINKS = document.querySelectorAll('menu a');
+const burger = document.querySelector('#burger-menu');
+const links = document.querySelectorAll('menu a');
 const HOME = document.querySelector('#Home');
 const SERVICES = document.querySelector('#Services');
 const CONTACT = document.querySelector('#Contact');
-const TESTI = document.querySelector('#Testimonials')
+const TESTI = document.querySelector('#Testimonials');
+const PLANS = document.querySelector('#plan');
 const homeLink = document.querySelector('#nav-home');
 const servicesLink = document.querySelector('#nav-services');
 const contactLink = document.querySelector('#nav-contact');
 const testiLink = document.querySelector('#nav-testi');
+const plansLink = document.querySelector('#nav-plans');
 let menu = document.querySelector('menu');
 let header = document.querySelector('header');
 
@@ -23,22 +25,27 @@ window.addEventListener("scroll",() => {
 window.addEventListener('scroll' , () => {
     const p = window.pageYOffset;
     if(p >= HOME.offsetTop-112 && p < SERVICES.offsetTop-112) {
-        LINKS.forEach(link => {
+        links.forEach(link => {
             link.classList.remove('active');
         });
         homeLink.classList.add('active');
-    } else if(p >= SERVICES.offsetTop-112 && p < TESTI.offsetTop-112) {
-        LINKS.forEach(link => {
+    } else if(p >= SERVICES.offsetTop-112 && p < PLANS.offsetTop-112) {
+        links.forEach(link => {
             link.classList.remove('active');
         });
         servicesLink.classList.add('active');
+    } else if(p >= PLANS.offsetTop-112 && p < TESTI.offsetTop-112) {
+        links.forEach(link => {
+            link.classList.remove('active');
+        });
+        plansLink.classList.add('active');
     } else if(p >= TESTI.offsetTop-112 && p < CONTACT.offsetTop-112) {
-        LINKS.forEach(link => {
+        links.forEach(link => {
             link.classList.remove('active');
         });
         testiLink.classList.add('active');
     } else if(p >= CONTACT.offsetTop-112) {
-        LINKS.forEach(link => {
+        links.forEach(link => {
             link.classList.remove('active');
         });
         contactLink.classList.add('active');
@@ -143,17 +150,17 @@ content.forEach((contEle) => {
 // make menu in phone size
 
 
-BURGER.addEventListener('click', () => {
+burger.addEventListener('click', () => {
     menu.classList.toggle('active');
 });
-LINKS.forEach(LINK => {
+links.forEach(LINK => {
     LINK.addEventListener('click', () => {
         menu.classList.contains('active') ? menu.classList.remove('active') : 1;
     })
 })
 document.onclick = function(e) {
     if(menu.classList.contains('active')){
-        if(e.target != menu && e.target != BURGER) {
+        if(e.target != menu && e.target != burger) {
             menu.classList.remove('active');
         }
     }
